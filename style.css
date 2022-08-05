@@ -1,0 +1,32 @@
+:root {
+    --grid-rows: 16;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: grid;
+    width: 750px;
+    height: 750px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-rows), 1fr);
+}
+  
+.grid-item {
+    padding-bottom: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+button{
+    margin: 20px;
+    align-self: center;
+}
